@@ -1,0 +1,7 @@
+{
+  "version": "0.2",
+  "language": "en-GB",
+  "words": ["clsx", "papaparse", "unparse"],
+  "flagWords": [],
+  "spellCheckDelayMs": 250
+}

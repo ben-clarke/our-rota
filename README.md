@@ -1,1 +1,29 @@
-# our-rota
+# Our Rota
+
+## Getting Started
+
+### Installation
+
+Install the dependencies:
+
+```bash
+yarn install
+```
+
+### Development
+
+Start the development server with HMR:
+
+```bash
+yarn dev
+```
+
+Your application will be available at `http://localhost:3000`.
+
+## Building for Production
+
+Create a production build:
+
+```bash
+yarn build
+```
