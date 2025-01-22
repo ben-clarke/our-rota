@@ -1,5 +1,3 @@
-import type { Route } from ".react-router/types/app/routes/+types/home";
+import type { LoaderFunction } from "react-router";
 
-export const loader = ({ context }: Route.LoaderArgs) => {
-  return { message: context.VALUE_FROM_VERCEL };
-};
+export const loader: LoaderFunction = () => ({});

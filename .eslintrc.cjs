@@ -10,6 +10,9 @@ module.exports = {
     jest: {
       version: 27,
     },
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"],
+    },
     "import/resolver": {
       typescript: {
         directory: "./tsconfig.json",
@@ -30,6 +33,10 @@ module.exports = {
     "public",
     "logs",
     "setup-test-env.ts",
+    ".editorconfig",
+    ".prettierrc",
+    ".gitignore",
+    ".prettierignore",
   ],
   rules: {
     indent: 0,

@@ -6,7 +6,8 @@
     "build": "react-router build && node vercel/prepare.js",
     "dev": "cross-env NODE_ENV=development node ./dev-server.js",
     "format": "prettier --write .",
-    "lint": "prettier --check . && eslint --max-warnings 0 --color --ext .ts,.tsx,.js --cache --cache-location .cache/eslint .",
+    "lint": "prettier --check ./app && eslint --max-warnings 0 --color --ext .ts,.tsx,.js --cache --cache-location .cache/eslint ./app",
+    "lint:fix": "eslint --fix --max-warnings 0 --color --ext .ts,.tsx,.js --cache --cache-location .cache/eslint ./app",
     "typecheck": "react-router typegen && tsc"
   },
   "dependencies": {
@@ -22,6 +23,7 @@
   "devDependencies": {
     "@react-router/dev": "7.1.3",
     "@react-router/fs-routes": "7.1.3",
+    "@remix-run/eslint-config": "2.15.2",
     "@types/express": "5.0.0",
     "@types/node": "20",
     "@types/react": "19.0.1",
